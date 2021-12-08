@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-06 02:33:33
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 07:05:09
          compiled from "/var/www/html/prestashop2/admin140y59nsj/themes/default/template/controllers/login/content.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:186352355661adbccde777d6-29119053%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:189840615061b09f751fa9a7-59976856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '186352355661adbccde777d6-29119053',
+  'nocache_hash' => '189840615061b09f751fa9a7-59976856',
   'function' => 
   array (
   ),
@@ -34,9 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61adbccde9c359_20389959',
+  'unifunc' => 'content_61b09f75224d85_85271149',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61adbccde9c359_20389959')) {function content_61adbccde9c359_20389959($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/var/www/html/prestashop2/tools/smarty/plugins/modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_61b09f75224d85_85271149')) {function content_61b09f75224d85_85271149($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/var/www/html/prestashop2/tools/smarty/plugins/modifier.date_format.php';
 ?>
 <div id="login-panel">
 	<div id="login-header">

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-06 02:13:13
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 08:29:50
          compiled from "/var/www/html/prestashop2/themes/zayshop/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:188193310361adb8098d9d81-68690727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:48246656761b0b34e399a90-26204743%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6bcdad8c33ad2d3654896dd5f47769ef27515cca' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/index.tpl',
-      1 => 1638426897,
+      1 => 1638970183,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '188193310361adb8098d9d81-68690727',
+  'nocache_hash' => '48246656761b0b34e399a90-26204743',
   'function' => 
   array (
   ),
@@ -23,15 +23,33 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61adb8098e1cf3_45529288',
+  'unifunc' => 'content_61b0b34e3a23b0_13520168',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61adb8098e1cf3_45529288')) {function content_61adb8098e1cf3_45529288($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b0b34e3a23b0_13520168')) {function content_61b0b34e3a23b0_13520168($_smarty_tpl) {?>
 <?php if (isset($_smarty_tpl->tpl_vars['HOOK_HOME_TAB_CONTENT']->value)&&trim($_smarty_tpl->tpl_vars['HOOK_HOME_TAB_CONTENT']->value)) {?>
     <?php if (isset($_smarty_tpl->tpl_vars['HOOK_HOME_TAB']->value)&&trim($_smarty_tpl->tpl_vars['HOOK_HOME_TAB']->value)) {?>
-        <ul id="home-page-tabs" class="nav nav-tabs clearfix">
-			<?php echo $_smarty_tpl->tpl_vars['HOOK_HOME_TAB']->value;?>
+    	<section>
+    		<div class="row text-center pt-3">
+	            <div class="col-lg-6 m-auto">
+	                <h1 class="h1">Categories of The Month</h1>
+	                <p>
+	                	<?php echo smartyTranslate(array('s'=>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+	                    deserunt mollit anim id est laborum",'mod'=>''),$_smarty_tpl);?>
 
-		</ul>
+	                </p>
+	            </div>
+        	</div>
+        	<div class="row">
+        		
+		        <ul id="home-page-tabs" class="nav nav-tabs clearfix" style="border: 1px solid red;">
+					<?php echo $_smarty_tpl->tpl_vars['HOOK_HOME_TAB']->value;?>
+
+				</ul>	
+				
+        	</div>
+    	</section>
+    	
+		
 	<?php }?>
 	<div class="tab-content"><?php echo $_smarty_tpl->tpl_vars['HOOK_HOME_TAB_CONTENT']->value;?>
 </div>

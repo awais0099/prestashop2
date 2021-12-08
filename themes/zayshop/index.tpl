@@ -24,9 +24,28 @@
 *}
 {if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
     {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
-        <ul id="home-page-tabs" class="nav nav-tabs clearfix">
+    	<section>
+    		<div class="row text-center pt-3">
+	            <div class="col-lg-6 m-auto">
+	                <h1 class="h1">Categories of The Month</h1>
+	                <p>
+	                	{l s="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+	                    deserunt mollit anim id est laborum" mod=""}
+	                </p>
+	            </div>
+        	</div>
+        	<div class="row">
+        		{* this is original tab *}
+		        <ul id="home-page-tabs" class="nav nav-tabs clearfix" style="border: 1px solid red;">
+					{$HOOK_HOME_TAB}
+				</ul>	
+				{* close original tab *}
+        	</div>
+    	</section>
+    	
+		{* <section id="home-page-tabs">	
 			{$HOOK_HOME_TAB}
-		</ul>
+		</section> *}
 	{/if}
 	<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
 {/if}

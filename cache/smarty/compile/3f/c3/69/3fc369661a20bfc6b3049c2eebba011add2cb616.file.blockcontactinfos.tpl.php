@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 01:36:23
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 08:29:52
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/blockcontactinfos/blockcontactinfos.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:42895555361adb8098b3ef1-43340134%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:140074314061b0b350af7711-54072930%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '42895555361adb8098b3ef1-43340134',
+  'nocache_hash' => '140074314061b0b350af7711-54072930',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61adb8098c0985_96168991',
   'variables' => 
   array (
     'blockcontactinfos_company' => 0,
@@ -25,8 +23,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'blockcontactinfos_email' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_61b0b350b21e19_05089512',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61adb8098c0985_96168991')) {function content_61adb8098c0985_96168991($_smarty_tpl) {?><?php if (!is_callable('smarty_function_mailto')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.mailto.php';
+<?php if ($_valid && !is_callable('content_61b0b350b21e19_05089512')) {function content_61b0b350b21e19_05089512($_smarty_tpl) {?><?php if (!is_callable('smarty_function_mailto')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.mailto.php';
 ?>
 
 <!-- MODULE Block contact infos ** original-->

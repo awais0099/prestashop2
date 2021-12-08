@@ -22,4 +22,28 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<li><a data-toggle="tab" href="#blocknewproducts" class="blocknewproducts">{l s='New arrivals' mod='blocknewproducts'}</a></li>
+
+{* <li><a data-toggle="tab" href="#blocknewproducts" class="blocknewproducts">{l s='New arrivals' mod='blocknewproducts'}</a></li>
+ *}
+
+{* *************************************************************************************************** *}
+
+{* <li>
+	<a data-toggle="tab" href="#blocknewproducts" class="blocknewproducts">
+		{l s='New arrivals' mod='blocknewproducts'}
+	</a>
+</li> *}
+
+<div class="col-12 col-md-4 p-5 mt-3">
+    {* <a href="#">
+    	<img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border">
+    </a>
+ *}
+    <a data-toggle="tab" href="#blocknewproducts" class="blocknewproducts">
+		{l s='' mod='blocknewproducts'}
+		<img src="./themes/zayshop/img/category_img_01.jpg" class="rounded-circle img-fluid border">
+	</a>
+
+    <h5 class="text-center mt-3 mb-3">Watches</h5>
+    <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+</div>

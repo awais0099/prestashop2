@@ -22,14 +22,19 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+{* </div><!-- #center_column -->
+		</div><!-- .row -->
+				</div><!-- #columns -->
+			</div><!-- .columns-container --> *}
 {if !isset($content_only) || !$content_only}
 					</div><!-- #center_column -->
 					{if isset($right_column_size) && !empty($right_column_size)}
 						<div id="right_column" class="col-xs-12 col-sm-{$right_column_size|intval} column">{$HOOK_RIGHT_COLUMN}</div>
 					{/if}
-					</div><!-- .row -->
+				{* 	</div><!-- .row -->
 				</div><!-- #columns -->
-			</div><!-- .columns-container -->
+			</div><!-- .columns-container --> *}
+
 			{if isset($HOOK_FOOTER)}
 				<!-- Footer original -->
 					{* <div class="footer-container">
@@ -55,7 +60,7 @@
 							</div>
 						</div>
 					</div> <!--what is this 1-->
-				</footer>
+				</footer><!--what is footer-->
 
 			{/if}
 		{* </div><!-- #page --> *}

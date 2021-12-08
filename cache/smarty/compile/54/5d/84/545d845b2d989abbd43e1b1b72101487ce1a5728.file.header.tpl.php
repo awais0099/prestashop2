@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 00:31:52
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 08:29:52
          compiled from "/var/www/html/prestashop2/themes/zayshop/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:152556256061adb8098f58c0-85560909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:180823334461b0b350ca4654-58897913%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '545d845b2d989abbd43e1b1b72101487ce1a5728' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/header.tpl',
-      1 => 1638941505,
+      1 => 1638970187,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '152556256061adb8098f58c0-85560909',
+  'nocache_hash' => '180823334461b0b350ca4654-58897913',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61adb80993dd05_35726309',
   'variables' => 
   array (
     'language_code' => 0,
@@ -52,8 +50,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cols' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_61b0b350d1ece2_29080041',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61adb80993dd05_35726309')) {function content_61adb80993dd05_35726309($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_61b0b350d1ece2_29080041')) {function content_61b0b350d1ece2_29080041($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -153,6 +153,7 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 
 
 		
+		<!--displaytop /module top horizontal navbar-->
 		<?php $_smarty_tpl->_capture_stack[0][] = array('displayNav', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayNav'),$_smarty_tpl);?>
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
 if (!empty($_capture_buffer)) {
@@ -191,16 +192,14 @@ if (!empty($_capture_buffer)) {
 			<?php }?>
 		
 
+		
+
 		<div id="page">
 			<div class="columns-container">
 				<div id="columns" class="container">
 					<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='pagenotfound') {?>
 						
 					<?php }?>
-
-					<!-- this is original slider -->
-					
-					<!-- cloxe original slider -->
 
 					<div class="row">
 						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&!empty($_smarty_tpl->tpl_vars['left_column_size']->value)) {?>
@@ -211,5 +210,10 @@ if (!empty($_capture_buffer)) {
 						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&isset($_smarty_tpl->tpl_vars['right_column_size']->value)) {?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable((12-$_smarty_tpl->tpl_vars['left_column_size']->value-$_smarty_tpl->tpl_vars['right_column_size']->value), null, 0);?><?php } else { ?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable(12, null, 0);?><?php }?>
 						<div id="center_column" class="center_column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['cols']->value);?>
 ">
+						</div><!-- #center_column -->
+					</div><!-- .row -->
+				</div><!-- #columns -->
+			</div><!-- .columns-container -->
+		</div>
 	<?php }?>
 <?php }} ?>

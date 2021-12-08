@@ -79,6 +79,7 @@
 
 
 		{* Start Top Nav *}
+		<!--displaytop /module top horizontal navbar-->
 		{capture name='displayNav'}{hook h='displayNav'}{/capture}
 		{if $smarty.capture.displayNav}
 			<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
@@ -102,6 +103,8 @@
 			{/if}
 		{* close temp slider *}
 
+		
+
 		<div id="page">
 			<div class="columns-container">
 				<div id="columns" class="container">
@@ -109,19 +112,15 @@
 						{* {include file="$tpl_dir./breadcrumb.tpl"} *}
 					{/if}
 
-					<!-- this is original slider -->
-					{* <div id="slider_row" class="row">
-						{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
-						{if $smarty.capture.displayTopColumn}
-							<div id="top_column" class="center_column col-xs-12 col-sm-12">{$smarty.capture.displayTopColumn}</div>
-						{/if}
-					</div> *}
-					<!-- cloxe original slider -->
-
 					<div class="row">
 						{if isset($left_column_size) && !empty($left_column_size)}
 						<div id="left_column" class="column col-xs-12 col-sm-{$left_column_size|intval}">{$HOOK_LEFT_COLUMN}</div>
 						{/if}
 						{if isset($left_column_size) && isset($right_column_size)}{assign var='cols' value=(12 - $left_column_size - $right_column_size)}{else}{assign var='cols' value=12}{/if}
 						<div id="center_column" class="center_column col-xs-12 col-sm-{$cols|intval}">
+						</div><!-- #center_column -->
+					</div><!-- .row -->
+				</div><!-- #columns -->
+			</div><!-- .columns-container -->
+		</div>
 	{/if}

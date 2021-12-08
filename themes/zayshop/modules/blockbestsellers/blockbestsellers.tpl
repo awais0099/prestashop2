@@ -25,9 +25,11 @@
 *}
 
 <!-- MODULE Block best sellers -->
+{* </div> *}
 <div id="best-sellers_block_right" class="block products_block">
 	<h4 class="title_block">
-    	<a href="{$link->getPageLink('best-sales')|escape:'html'}" title="{l s='View a top sellers products' mod='blockbestsellers'}">{l s='Top sellers' mod='blockbestsellers'}</a>
+    	<a href="{$link->getPageLink('best-sales')|escape:'html'}" title="{l s='View a top sellers products' mod='blockbestsellers'}">
+    	{l s='****Top sellers' mod='blockbestsellers'}</a>
     </h4>
 	<div class="block_content">
 	{if $best_sellers && $best_sellers|@count > 0}
@@ -38,7 +40,7 @@
 					<img class="replace-2x img-responsive" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'small_default')|escape:'html'}" alt="{$product.legend|escape:'html':'UTF-8'}" />
 				</a>
 				<div class="product-content">
-                	<h5>
+                	<h5>ajskldfjlksdjf
                     	<a class="product-name" href="{$product.link|escape:'html'}" title="{$product.legend|escape:'html':'UTF-8'}">
                             {$product.name|strip_tags:'UTF-8'|escape:'html':'UTF-8'}
                         </a>
@@ -61,5 +63,7 @@
 		<p>{l s='No best sellers at this time' mod='blockbestsellers'}</p>
 	{/if}
 	</div>
-</div>
+</div> 
+{* </div> <!-- /page end --> *}
+
 <!-- /MODULE Block best sellers -->

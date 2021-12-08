@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 01:45:25
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 08:29:52
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/blockcontact/nav.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:62114461261adb8099424e9-79175393%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:156853883761b0b350d32a31-70621614%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '684eaa44a55e5cdd3980180ea43fa4c0eb83e11e' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/modules/blockcontact/nav.tpl',
-      1 => 1638945921,
+      1 => 1638947098,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '62114461261adb8099424e9-79175393',
+  'nocache_hash' => '156853883761b0b350d32a31-70621614',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61adb80994b867_60564221',
   'variables' => 
   array (
     'telnumber' => 0,
@@ -24,8 +22,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_61b0b350d44c70_72402787',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61adb80994b867_60564221')) {function content_61adb80994b867_60564221($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b0b350d44c70_72402787')) {function content_61b0b350d44c70_72402787($_smarty_tpl) {?>
 
 
 
@@ -55,15 +55,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php echo smartyTranslate(array('s'=>'','mod'=>'blockcontact'),$_smarty_tpl);?>
 
 	</a>
-	<a class="text-light" href="https://fb.com/templatemo" target="_blank">
+	<a class="text-light" href="https://fb.com/templatemo" target="_blank" style="text-decoration: none;">
 		<i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
 	</a>
 
-	
-    <a class="text-light" href="https://www.instagram.com/" target="_blank">
+
+    <a class="text-light" href="https://www.instagram.com/" target="_blank" style="text-decoration: none;">
     	<i class="fab fa-instagram fa-sm fa-fw me-2"></i>
     </a>
-    <a class="text-light" href="https://twitter.com/" target="_blank">
+    <a class="text-light" href="https://twitter.com/" target="_blank" style="text-decoration: none;">
     	<i class="fab fa-twitter fa-sm fa-fw me-2"></i>
     </a>
     <a class="text-light" href="https://www.linkedin.com/" target="_blank">
