@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-07 07:50:19
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 00:41:10
          compiled from "/var/www/html/prestashop2/themes/zayshop/footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:145894548561adb809969950-18307489%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2d31766f4018ea57ab4f5bcff02cc19ce91a3b11' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/footer.tpl',
-      1 => 1638881267,
+      1 => 1638942060,
       2 => 'file',
     ),
   ),
@@ -58,11 +58,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> <!--what is this 1-->
 				</footer>
 
 			<?php }?>
-		</div><!-- #page -->
+		
 <?php }?>
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./global.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 

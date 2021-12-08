@@ -53,20 +53,19 @@
 
 <div {if isset($is_logged) && $is_logged} class="is_logged"{/if}>
 	<a class="text-light" href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}">
-		{l s='Contact us' mod='blockcontact'}
+		{l s='' mod='blockcontact'}
 	</a>
 	<a class="text-light" href="https://fb.com/templatemo" target="_blank">
 		<i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
 	</a>
-    
+
+	
     <a class="text-light" href="https://www.instagram.com/" target="_blank">
     	<i class="fab fa-instagram fa-sm fa-fw me-2"></i>
     </a>
-    
     <a class="text-light" href="https://twitter.com/" target="_blank">
     	<i class="fab fa-twitter fa-sm fa-fw me-2"></i>
     </a>
-    
     <a class="text-light" href="https://www.linkedin.com/" target="_blank">
     	<i class="fab fa-linkedin fa-sm fa-fw"></i>
     </a>

@@ -54,11 +54,11 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> <!--what is this 1-->
 				</footer>
 
 			{/if}
-		</div><!-- #page -->
+		{* </div><!-- #page --> *}
 {/if}
 {include file="$tpl_dir./global.tpl"}
 	</body>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-06 02:13:13
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 01:45:25
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/blockcontact/nav.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:62114461261adb8099424e9-79175393%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '684eaa44a55e5cdd3980180ea43fa4c0eb83e11e' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/modules/blockcontact/nav.tpl',
-      1 => 1638770894,
+      1 => 1638945921,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_61adb80994b867_60564221',
   'variables' => 
   array (
     'telnumber' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61adb80994b867_60564221',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_61adb80994b867_60564221')) {function content_61adb80994b867_60564221($_smarty_tpl) {?>
 
@@ -52,21 +52,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<a class="text-light" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('contact',true), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo smartyTranslate(array('s'=>'Contact us','mod'=>'blockcontact'),$_smarty_tpl);?>
 ">
-		<?php echo smartyTranslate(array('s'=>'Contact us','mod'=>'blockcontact'),$_smarty_tpl);?>
+		<?php echo smartyTranslate(array('s'=>'','mod'=>'blockcontact'),$_smarty_tpl);?>
 
 	</a>
 	<a class="text-light" href="https://fb.com/templatemo" target="_blank">
 		<i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
 	</a>
-    
+
+	
     <a class="text-light" href="https://www.instagram.com/" target="_blank">
     	<i class="fab fa-instagram fa-sm fa-fw me-2"></i>
     </a>
-    
     <a class="text-light" href="https://twitter.com/" target="_blank">
     	<i class="fab fa-twitter fa-sm fa-fw me-2"></i>
     </a>
-    
     <a class="text-light" href="https://www.linkedin.com/" target="_blank">
     	<i class="fab fa-linkedin fa-sm fa-fw"></i>
     </a>

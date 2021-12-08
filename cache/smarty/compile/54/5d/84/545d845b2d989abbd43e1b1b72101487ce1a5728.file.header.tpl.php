@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-06 07:59:39
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-08 00:31:52
          compiled from "/var/www/html/prestashop2/themes/zayshop/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:152556256061adb8098f58c0-85560909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '545d845b2d989abbd43e1b1b72101487ce1a5728' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/header.tpl',
-      1 => 1638795575,
+      1 => 1638941505,
       2 => 'file',
     ),
   ),
@@ -176,27 +176,32 @@ if (!empty($_capture_buffer)) {
 			<?php if (isset($_smarty_tpl->tpl_vars['HOOK_TOP']->value)) {?><?php echo $_smarty_tpl->tpl_vars['HOOK_TOP']->value;?>
 <?php }?>
 		
-		
-		<div id="page">
-			<div class="columns-container">
-				<div id="columns" class="container">
-					<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='pagenotfound') {?>
-						<?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./breadcrumb.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-					<?php }?>
-					<div id="slider_row" class="row">
-						<?php $_smarty_tpl->_capture_stack[0][] = array('displayTopColumn', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayTopColumn'),$_smarty_tpl);?>
+		
+			<?php $_smarty_tpl->_capture_stack[0][] = array('displayTopColumn', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayTopColumn'),$_smarty_tpl);?>
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
 if (!empty($_capture_buffer)) {
  if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
  if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
  Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
 } else $_smarty_tpl->capture_error();?>
-						<?php if (Smarty::$_smarty_vars['capture']['displayTopColumn']) {?>
-							<div id="top_column" class="center_column col-xs-12 col-sm-12"><?php echo Smarty::$_smarty_vars['capture']['displayTopColumn'];?>
-</div>
-						<?php }?>
-					</div>
+			<?php if (Smarty::$_smarty_vars['capture']['displayTopColumn']) {?>
+					<?php echo Smarty::$_smarty_vars['capture']['displayTopColumn'];?>
+
+			<?php }?>
+		
+
+		<div id="page">
+			<div class="columns-container">
+				<div id="columns" class="container">
+					<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='pagenotfound') {?>
+						
+					<?php }?>
+
+					<!-- this is original slider -->
+					
+					<!-- cloxe original slider -->
+
 					<div class="row">
 						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&!empty($_smarty_tpl->tpl_vars['left_column_size']->value)) {?>
 						<div id="left_column" class="column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['left_column_size']->value);?>
