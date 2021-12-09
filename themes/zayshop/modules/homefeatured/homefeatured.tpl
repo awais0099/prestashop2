@@ -23,7 +23,19 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if isset($products) && $products}
-	{include file="$tpl_dir./product-list.tpl" class='homefeatured tab-pane' id='homefeatured'}
+	<div class="container py-5">
+		<div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Featured Product</h1>
+                <p>
+                    Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident.
+                </p>
+            </div>
+        </div>
+        {include file="$tpl_dir./product-list.tpl" class='homefeatured tab-pane' id='homefeatured'}
+	</div>
+	
 {else}
 <ul id="homefeatured" class="homefeatured tab-pane">
 	<li class="alert alert-info">{l s='No featured products at this time.' mod='homefeatured'}</li>

@@ -43,9 +43,9 @@
 {* ************************************************************************************************* *}
 <div class="col-md-4 pt-5">
 	<h2 class="h2 text-light border-bottom pb-3 border-light">
-		{* <a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='Manage my customer account' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My account' mod='blockmyaccountfooter'}
-		</a> *}
-		Further Info
+		<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='Manage my customer account' mod='blockmyaccountfooter'}" rel="nofollow" class="text-decoration-none" style="font: 300 30px 'Roboto', sans-serif!important;">
+			{l s='My account' mod='blockmyaccountfooter'}
+		</a>
 	</h2>
 	<ul class="list-unstyled text-light footer-link-list">
 		<li>

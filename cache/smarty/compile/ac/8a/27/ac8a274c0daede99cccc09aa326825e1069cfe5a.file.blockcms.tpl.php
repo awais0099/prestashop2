@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 01:43:16
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:51:39
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/blockcms/blockcms.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:133740602161b1a584248992-90577095%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:23023338561b209ebaf3d64-79769432%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ac8a274c0daede99cccc09aa326825e1069cfe5a' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/modules/blockcms/blockcms.tpl',
-      1 => 1638948019,
+      1 => 1639033578,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '133740602161b1a584248992-90577095',
+  'nocache_hash' => '23023338561b209ebaf3d64-79769432',
   'function' => 
   array (
   ),
@@ -38,9 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b1a5842ccef9_61617911',
+  'unifunc' => 'content_61b209ebb94b54_87129447',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b1a5842ccef9_61617911')) {function content_61b1a5842ccef9_61617911($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b209ebb94b54_87129447')) {function content_61b209ebb94b54_87129447($_smarty_tpl) {?>
 
 <?php if ($_smarty_tpl->tpl_vars['block']->value==1) {?>
 	<!-- Block CMS module -->
@@ -114,7 +114,7 @@ $_smarty_tpl->tpl_vars['cms_page']->_loop = true;
 	<!-- Block CMS module footer -->
 	<div class="col-md-4 pt-5">
 		<h2 class="h2 text-light border-bottom pb-3 border-light">
-			<?php echo smartyTranslate(array('s'=>'Products','mod'=>'blockcms'),$_smarty_tpl);?>
+			<?php echo smartyTranslate(array('s'=>'Information','mod'=>'blockcms'),$_smarty_tpl);?>
 
 		</h2>
 		<ul class="list-unstyled text-light footer-link-list">

@@ -1,6 +1,9 @@
 /*******************************************************
 Product list Styles
 ********************************************************/
+*{
+  /*font-family: 'Roboto', sans-serif;*/
+}
 ul.product_list .product-name {
   display: inline-block;
   width: 100%;
@@ -206,7 +209,7 @@ ul.product_list.grid > li {
     ul.product_list.grid > li .product-container .old-price {
       margin-right: 5px; }
     ul.product_list.grid > li .product-container .button-container {
-      margin-bottom: 14px; }
+      /*margin-bottom: 14px;*/ }
       @media (min-width: 1200px) {
         ul.product_list.grid > li .product-container .button-container {
           display: none; } }
@@ -364,7 +367,6 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 @media (max-width: 479px) {
   ul.product_list.list > li {
     text-align: center; } }
-
 /*******************************************************
 Product list(Index page) Styles
 ********************************************************/

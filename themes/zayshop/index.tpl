@@ -47,7 +47,14 @@
 			{$HOOK_HOME_TAB}
 		</section> *}
 	{/if}
-	<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
+	<div class="tab-content" style="margin-top: 0px;">
+		<section>
+			
+		</section>
+		<section class="bg-light">
+			{$HOOK_HOME_TAB_CONTENT}
+		</section>
+	</div>
 {/if}
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
 	<div class="clearfix">{$HOOK_HOME}</div>

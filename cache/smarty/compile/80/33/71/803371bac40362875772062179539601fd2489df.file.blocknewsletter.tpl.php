@@ -1,40 +1,79 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 01:43:16
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:51:39
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/blocknewsletter/blocknewsletter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:105208679861b1a584348434-37202581%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:193577216561b209ebc51b56-97606464%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '803371bac40362875772062179539601fd2489df' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/modules/blocknewsletter/blocknewsletter.tpl',
-      1 => 1638880957,
+      1 => 1639045609,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '105208679861b1a584348434-37202581',
+  'nocache_hash' => '193577216561b209ebc51b56-97606464',
   'function' => 
   array (
   ),
+  'variables' => 
+  array (
+    'link' => 0,
+    'msg' => 0,
+    'nw_error' => 0,
+    'value' => 0,
+    'id_module' => 0,
+  ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b1a5843494f2_15898741',
+  'unifunc' => 'content_61b209ebc80099_72501460',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b1a5843494f2_15898741')) {function content_61b1a5843494f2_15898741($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b209ebc80099_72501460')) {function content_61b209ebc80099_72501460($_smarty_tpl) {?>
 <!-- Block Newsletter module-->
 
 
 
 
 
+<div id="newsletter_block_left" style="width: 40%;float: right;">
+	
+	<div class="block_content">
+		<form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('index',null,null,null,false,null,true), ENT_QUOTES, 'UTF-8', true);?>
+" method="post">
+			<div class="form-group<?php if (isset($_smarty_tpl->tpl_vars['msg']->value)&&$_smarty_tpl->tpl_vars['msg']->value) {?> <?php if ($_smarty_tpl->tpl_vars['nw_error']->value) {?>form-error<?php } else { ?>form-ok<?php }?><?php }?>" >
+				<input class="inputNew form-control bg-dark border-light newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="<?php if (isset($_smarty_tpl->tpl_vars['msg']->value)&&$_smarty_tpl->tpl_vars['msg']->value) {?><?php echo $_smarty_tpl->tpl_vars['msg']->value;?>
+<?php } elseif (isset($_smarty_tpl->tpl_vars['value']->value)&&$_smarty_tpl->tpl_vars['value']->value) {?><?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+<?php } else { ?><?php echo smartyTranslate(array('s'=>'Enter your e-mail','mod'=>'blocknewsletter'),$_smarty_tpl);?>
+<?php }?>" 
+				style="width: 255px;display: inline-block;padding: 20px 10px;line-height: 1.5;color: #6b6f73;border-radius: .25rem;margin-right: 0px;" 
+				/>
+				<button type="submit" name="submitNewsletter" class="btn btn-default button button-small btn-success text-light" style="padding: 10px 10px;margin-left: -8px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;font-weight: 300; font-size: 18px;">
+					
+					<?php echo smartyTranslate(array('s'=>'Subscribed','mod'=>'blocknewsletter'),$_smarty_tpl);?>
 
+				</button>
+				<input type="hidden" name="action" value="0" />
+			</div>
+			<?php if (isset($_smarty_tpl->tpl_vars['id_module']->value)) {?>
+				<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayGDPRConsent','id_module'=>$_smarty_tpl->tpl_vars['id_module']->value),$_smarty_tpl);?>
 
-	<div class="col-auto">
-		<label class="sr-only" for="subscribeEmail">Email address</label>
-		<div class="input-group mb-2">
-			<input type="text" class="form-control border-light" id="subscribeEmail" placeholder="Email address">
-			<div class="input-group-text btn-success text-light">Subscribe</div>
-		</div>
+			<?php }?>
+		</form>
 	</div>
+	<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>"displayBlockNewsletterBottom",'from'=>'blocknewsletter'),$_smarty_tpl);?>
+
+</div>
+<!-- /Block Newsletter module-->
+<?php if (isset($_smarty_tpl->tpl_vars['msg']->value)&&$_smarty_tpl->tpl_vars['msg']->value) {?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('msg_newsl'=>addcslashes($_smarty_tpl->tpl_vars['msg']->value,'\'')),$_smarty_tpl);?>
+<?php }?><?php if (isset($_smarty_tpl->tpl_vars['nw_error']->value)) {?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('nw_error'=>$_smarty_tpl->tpl_vars['nw_error']->value),$_smarty_tpl);?>
+<?php }?><?php $_smarty_tpl->smarty->_tag_stack[] = array('addJsDefL', array('name'=>'placeholder_blocknewsletter')); $_block_repeat=true; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'placeholder_blocknewsletter'), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
+<?php echo smartyTranslate(array('s'=>'Enter your e-mail','mod'=>'blocknewsletter','js'=>1),$_smarty_tpl);?>
+<?php $_block_content = ob_get_clean(); $_block_repeat=false; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'placeholder_blocknewsletter'), $_block_content, $_smarty_tpl, $_block_repeat); } array_pop($_smarty_tpl->smarty->_tag_stack);?>
+<?php if (isset($_smarty_tpl->tpl_vars['msg']->value)&&$_smarty_tpl->tpl_vars['msg']->value) {?><?php $_smarty_tpl->smarty->_tag_stack[] = array('addJsDefL', array('name'=>'alert_blocknewsletter')); $_block_repeat=true; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'alert_blocknewsletter'), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
+<?php echo smartyTranslate(array('s'=>'Newsletter : %1$s','sprintf'=>$_smarty_tpl->tpl_vars['msg']->value,'js'=>1,'mod'=>"blocknewsletter"),$_smarty_tpl);?>
+<?php $_block_content = ob_get_clean(); $_block_repeat=false; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'alert_blocknewsletter'), $_block_content, $_smarty_tpl, $_block_repeat); } array_pop($_smarty_tpl->smarty->_tag_stack);?>
+<?php }?>
+
+	
 </div>
 
 <?php }} ?>

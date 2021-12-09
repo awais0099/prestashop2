@@ -1,0 +1,23 @@
+[33mcommit d5cfa324172d97228b9718f272eb88a43fae4e66[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: temper <temp@gmail.com>
+Date:   Thu Dec 9 11:48:41 2021 +0500
+
+    tab design completed, tab completely removed/unhook, featured-tab/popular-tab content/products didnt removed
+
+[33mcommit 7d8ab6fed47f571f2bf8189fa96957176c361bf8[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: temper <temp@gmail.com>
+Date:   Wed Dec 8 18:32:16 2021 +0500
+
+    content got isolated from id-page, new-arival done
+
+[33mcommit ed17fb4ac376c8f8d9d6d973b639f8e257e0621d[m
+Author: temper <temp@gmail.com>
+Date:   Wed Dec 8 12:00:11 2021 +0500
+
+    homeslider customized, markup and css done
+
+[33mcommit a4a4799e95327fff37689b78b830baf59480cea6[m
+Author: temper <temp@gmail.com>
+Date:   Wed Dec 8 09:39:46 2021 +0500
+
+    1st commit, footer section customized

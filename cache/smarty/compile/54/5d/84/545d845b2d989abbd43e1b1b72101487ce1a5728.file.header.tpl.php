@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 01:43:16
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:51:39
          compiled from "/var/www/html/prestashop2/themes/zayshop/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2751210461b1a5843cfd95-60833809%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:101620105361b209ebd19295-59716944%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '545d845b2d989abbd43e1b1b72101487ce1a5728' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/header.tpl',
-      1 => 1638970187,
+      1 => 1639055979,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2751210461b1a5843cfd95-60833809',
+  'nocache_hash' => '101620105361b209ebd19295-59716944',
   'function' => 
   array (
   ),
@@ -44,16 +44,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'restricted_country_mode' => 0,
     'geolocation_country' => 0,
     'HOOK_TOP' => 0,
-    'left_column_size' => 0,
-    'HOOK_LEFT_COLUMN' => 0,
-    'right_column_size' => 0,
-    'cols' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b1a5844839f5_38819862',
+  'unifunc' => 'content_61b209ebe176d7_68127327',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b1a5844839f5_38819862')) {function content_61b1a5844839f5_38819862($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_61b209ebe176d7_68127327')) {function content_61b209ebe176d7_68127327($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -82,6 +78,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<meta name="robots" content="<?php if (isset($_smarty_tpl->tpl_vars['nobots']->value)) {?>no<?php }?>index,<?php if (isset($_smarty_tpl->tpl_vars['nofollow']->value)&&$_smarty_tpl->tpl_vars['nofollow']->value) {?>no<?php }?>follow" />
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    
 		<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo $_smarty_tpl->tpl_vars['favicon_url']->value;?>
 ?<?php echo $_smarty_tpl->tpl_vars['img_update_time']->value;?>
 " />
@@ -194,26 +193,7 @@ if (!empty($_capture_buffer)) {
 
 		
 
-		<div id="page">
-			<div class="columns-container">
-				<div id="columns" class="container">
-					<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='pagenotfound') {?>
-						
-					<?php }?>
+		
 
-					<div class="row">
-						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&!empty($_smarty_tpl->tpl_vars['left_column_size']->value)) {?>
-						<div id="left_column" class="column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['left_column_size']->value);?>
-"><?php echo $_smarty_tpl->tpl_vars['HOOK_LEFT_COLUMN']->value;?>
-</div>
-						<?php }?>
-						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&isset($_smarty_tpl->tpl_vars['right_column_size']->value)) {?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable((12-$_smarty_tpl->tpl_vars['left_column_size']->value-$_smarty_tpl->tpl_vars['right_column_size']->value), null, 0);?><?php } else { ?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable(12, null, 0);?><?php }?>
-						<div id="center_column" class="center_column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['cols']->value);?>
-">
-						</div><!-- #center_column -->
-					</div><!-- .row -->
-				</div><!-- #columns -->
-			</div><!-- .columns-container -->
-		</div>
 	<?php }?>
 <?php }} ?>

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 01:14:41
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:02:53
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/sendtoafriend/sendtoafriend-extra.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:200181914861b19ed1ddc841-07040487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:138426124461b1fe7dab9ef7-28445768%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '200181914861b19ed1ddc841-07040487',
+  'nocache_hash' => '138426124461b1fe7dab9ef7-28445768',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b19ed1df7196_93028957',
+  'unifunc' => 'content_61b1fe7dad7147_26372997',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b19ed1df7196_93028957')) {function content_61b19ed1df7196_93028957($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b1fe7dad7147_26372997')) {function content_61b1fe7dad7147_26372997($_smarty_tpl) {?>
 <li class="sendtofriend">
 	<a id="send_friend_button" href="#send_friend_form">
 		<?php echo smartyTranslate(array('s'=>'Send to a friend','mod'=>'sendtoafriend'),$_smarty_tpl);?>

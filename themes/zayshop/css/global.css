@@ -6503,7 +6503,8 @@ table.table_block td {
         margin: 0px 0; } }
 
 .block {
-  margin-bottom: 30px; }
+  /*margin-bottom: 30px; */
+}
   @media (max-width: 767px) {
     .block {
       margin-bottom: 0px; } }

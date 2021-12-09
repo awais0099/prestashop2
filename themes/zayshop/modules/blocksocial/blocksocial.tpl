@@ -87,11 +87,11 @@
 <div class="clearfix"></div> *}
 
 {* ************************************************************************************************* *}
-<div class="row text-light mb-4">
-    <div class="col-12 mb-3">
-        <div class="w-100 my-3 border-top border-light"></div>
-    </div>
-	<div class="col-auto me-auto">
+<div class="row text-light" style="">
+	    <div class="col-12 mb-3">
+	        <div class="w-100 my-3 border-top border-light"></div>
+	    </div>
+	<div class="col-auto me-auto" style="">
 		<ul class="list-inline text-left footer-icons">
 			{if isset($facebook_url) && $facebook_url != ''}
 				<li class="list-inline-item border border-light rounded-circle text-center">
@@ -105,7 +105,7 @@
 				<li class="list-inline-item border border-light rounded-circle text-center">
 					<a class="text-decoration-none" href="{$twitter_url|escape:html:'UTF-8'}">
 						{* <span>{l s='Twitter' mod='blocksocial'}</span> *}
-						<i class="fab fa-instagram fa-lg fa-fw"></i>
+						<i class="fab fa-twitter fa-lg fa-fw"></i>
 					</a>
 				</li>
 			{/if}
@@ -113,7 +113,7 @@
 				<li class="list-inline-item border border-light rounded-circle text-center">
 					<a class="text-decoration-none" href="{$rss_url|escape:html:'UTF-8'}">
 						{* <span>{l s='RSS' mod='blocksocial'}</span> *}
-						<i class="fab fa-instagram fa-lg fa-fw"></i>
+						<i class="fas fa-rss fa-lg fa-fw"></i>
 					</a>
 				</li>
 			{/if}
@@ -121,7 +121,7 @@
 	        	<li class="list-inline-item border border-light rounded-circle text-center">
 	        		<a class="text-decoration-none" href="{$youtube_url|escape:html:'UTF-8'}">
 	        			{* <span>{l s='Youtube' mod='blocksocial'}</span> *}
-	        			<i class="fab fa-instagram fa-lg fa-fw"></i>
+	        			<i class="fab fa-youtube fa-lg fa-fw"></i>
 	        		</a>
 	        	</li>
 	        {/if}
@@ -129,7 +129,7 @@
 	        	<li class="list-inline-item border border-light rounded-circle text-center">
 	        		<a class="text-decoration-none" href="{$google_plus_url|escape:html:'UTF-8'}" rel="publisher">
 	        			{* <span>{l s='Google Plus' mod='blocksocial'}</span> *}
-	        			<i class="fab fa-instagram fa-lg fa-fw"></i>
+	        			<i class="fab fa-google-plus fa-lg fa-fw"></i>
 	        		</a>
 	        	</li>
 	        {/if}
@@ -137,7 +137,7 @@
 	        	<li class="list-inline-item border border-light rounded-circle text-center">
 	        		<a class="text-decoration-none" href="{$pinterest_url|escape:html:'UTF-8'}">
 	        			{* <span>{l s='Pinterest' mod='blocksocial'}</span> *}
-	        			<i class="fab fa-instagram fa-lg fa-fw"></i>
+	        			<i class="fab fa-pinterest-p fa-lg fa-fw"></i>
 	        		</a>
 	        	</li>
 	        {/if}
@@ -145,40 +145,11 @@
 	        	<li class="list-inline-item border border-light rounded-circle text-center">
 	        		<a class="text-decoration-none" href="{$vimeo_url|escape:html:'UTF-8'}">
 	        			{* <span>{l s='Vimeo' mod='blocksocial'}</span> *}
-	        			<i class="fab fa-instagram fa-lg fa-fw"></i>
-	        		</a>
-	        	</li>
-	        {/if}
-	        {if isset($instagram_url) && $instagram_url != ''}
-	        	<li class="list-inline-item border border-light rounded-circle text-center">
-	        		<a class="text-success text-decoration-none" href="{$instagram_url|escape:html:'UTF-8'}">
-	        			{* <span>{l s='Instagram' mod='blocksocial'}</span> *}
-	        			<i class="fab fa-instagram fa-lg fa-fw"></i>
+	        			<i class="fab fa-vimeo-v fa-lg fa-fw"></i>
 	        		</a>
 	        	</li>
 	        {/if}
 		</ul>
 	    {* <h4>{l s='Follow us' mod='blocksocial'}</h4> *}
 	</div>
-{* <div class="clearfix"></div> *}
-{* 
-<div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/">
-                            	<i class="fab fa-facebook-f fa-lg fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/">
-                            	<i class="fab fa-instagram fa-lg fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div> *}
+	{* <div class="clearfix"></div> *}

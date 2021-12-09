@@ -58,25 +58,26 @@
 
 {* ******************************************************************************************** *}
 
-{* <div id="newsletter_block_left" class="col-auto">
-	<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
-	<label class="sr-only" for="subscribeEmail">Email address</label>
-	<div class="input-group mb-2">
+<div id="newsletter_block_left" style="width: 40%;float: right;">
+	{* <h4>{l s='Newsletter' mod='blocknewsletter'}</h4> *}
+	<div class="block_content">
 		<form action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">
-			<div class="input-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-				<input class="form-control bg-dark border-light" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Email Address' mod='blocknewsletter'}{/if}" />
-				<div type="submit" name="submitNewsletter" class="input-group-text btn-success text-light">
-					<span>{l s='Ok' mod='blocknewsletter'}</span>
-					Subscribe
-				</div>
+			<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
+				<input class="inputNew form-control bg-dark border-light newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Enter your e-mail' mod='blocknewsletter'}{/if}" 
+				style="width: 255px;display: inline-block;padding: 20px 10px;line-height: 1.5;color: #6b6f73;border-radius: .25rem;margin-right: 0px;" 
+				/>
+				<button type="submit" name="submitNewsletter" class="btn btn-default button button-small btn-success text-light" style="padding: 10px 10px;margin-left: -8px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;font-weight: 300; font-size: 18px;">
+					{* <span>{l s='Submit' mod='blocknewsletter'}</span> *}
+					{l s='Subscribed' mod='blocknewsletter'}
+				</button>
 				<input type="hidden" name="action" value="0" />
 			</div>
 			{if isset($id_module)}
 				{hook h='displayGDPRConsent' id_module=$id_module}
 			{/if}
 		</form>
-		{hook h="displayBlockNewsletterBottom" from='blocknewsletter'}
 	</div>
+	{hook h="displayBlockNewsletterBottom" from='blocknewsletter'}
 </div>
 <!-- /Block Newsletter module-->
 {strip}
@@ -90,14 +91,14 @@
 {if isset($msg) && $msg}
 	{addJsDefL name=alert_blocknewsletter}{l s='Newsletter : %1$s' sprintf=$msg js=1 mod="blocknewsletter"}{/addJsDefL}
 {/if}
-{/strip} *}
+{/strip}
 
-	<div class="col-auto">
+	{* <div class="col-auto">
 		<label class="sr-only" for="subscribeEmail">Email address</label>
 		<div class="input-group mb-2">
 			<input type="text" class="form-control border-light" id="subscribeEmail" placeholder="Email address">
 			<div class="input-group-text btn-success text-light">Subscribe</div>
 		</div>
-	</div>
+	</div> *}
 </div>
 

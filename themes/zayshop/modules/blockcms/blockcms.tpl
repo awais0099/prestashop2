@@ -68,7 +68,7 @@
 	<!-- Block CMS module footer -->
 	<div class="col-md-4 pt-5">
 		<h2 class="h2 text-light border-bottom pb-3 border-light">
-			{l s='Products' mod='blockcms'}
+			{l s='Information' mod='blockcms'}
 		</h2>
 		<ul class="list-unstyled text-light footer-link-list">
 			{if isset($show_price_drop) && $show_price_drop && !$PS_CATALOG_MODE}
