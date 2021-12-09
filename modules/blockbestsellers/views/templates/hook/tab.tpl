@@ -22,4 +22,23 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<li><a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">{l s='Best Sellers' mod='blockbestsellers'}</a></li>
+{* href="#blocknewproducts":it means that when v click on a-tag this will show related products or best-seller/Accessories, to remove this the best-seller/Accessories products will not show in the tab-content div.
+now what happened the tab-content show when the page is load, now to completely remove this we need to remov/commented content in blockbestsellers-home.tpl file
+ *}
+{* <li><a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">{l s='Best Sellers' mod='blockbestsellers'}</a></li> *}
+
+{* ************************************************************************************************** *}
+
+<div class="col-12 col-md-4 p-5 mt-3">
+    <a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">
+    	<img src="./themes/zayshop/img/category_img_03.jpg" class="rounded-circle img-fluid border">
+	</a>
+    <h5 class="text-center mt-3 mb-3">
+    	{l s='Accessories' mod='blockbestsellers'}
+    </h5>
+    <p class="text-center">
+    	<a class="btn btn-success">
+    		{l s='Go Shop' mod='blockbestsellers'}
+    	</a>
+    </p>
+</div>

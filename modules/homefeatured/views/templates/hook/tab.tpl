@@ -22,4 +22,27 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<li><a data-toggle="tab" href="#homefeatured" class="homefeatured">{l s='Popular' mod='homefeatured'}</a></li>
+
+{* <li><a data-toggle="tab" href="#homefeatured" class="homefeatured">{l s='Popular' mod='homefeatured'}</a></li> *}
+
+{* ************************************************************************************************** *}
+
+<div class="col-12 col-md-4 p-5 mt-3">
+
+  {* <li>
+  	<a data-toggle="tab" href="#homefeatured" class="homefeatured">{l s='Popular' mod='homefeatured'}
+  	</a>
+  </li>
+ *}
+    <a data-toggle="tab" href="#homefeatured" class="homefeatured">
+    	<img src="./themes/zayshop/img/category_img_02.jpg" class="rounded-circle img-fluid border">
+  	</a>
+    <h5 class="text-center mt-3 mb-3">
+    	{l s='Shoes' mod='homefeatured'}
+    </h5>
+    <p class="text-center">
+    	<a class="btn btn-success">
+    		{l s='Go Shop' mod='homefeatured'}
+    	</a>
+    </p>
+</div>
