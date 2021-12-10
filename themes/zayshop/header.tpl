@@ -30,7 +30,7 @@
 <html{if isset($language_code) && $language_code} lang="{$language_code|escape:'html':'UTF-8'}"{/if}>
 	<head>
 		<meta charset="utf-8" />
-		<title>{$meta_title|escape:'html':'UTF-8'}</title>
+		<title>title{$meta_title|escape:'html':'UTF-8'}</title>
 		{if isset($meta_description) AND $meta_description}
 			<meta name="description" content="{$meta_description|escape:'html':'UTF-8'}" />
 		{/if}
@@ -42,7 +42,8 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    	<link rel="stylesheet" href="themes/zayshop/css/autoload/fontawesome.min.css">
     
 		<link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
@@ -87,7 +88,7 @@
 		{if $smarty.capture.displayNav}
 			<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
 				<div class="container text-light">
-					<div class="w-100 d-flex justify-content-between">
+					<div class="w-100 d-flex align-items-center">
 						{$smarty.capture.displayNav}
 					</div>
 				</div>
@@ -100,10 +101,12 @@
 		{* Close Header *}
 
 		{* temp slider *}
+		{* <div id='fucking-slider'> *}
 			{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
 			{if $smarty.capture.displayTopColumn}
 					{$smarty.capture.displayTopColumn}
 			{/if}
+		{* </div> *}
 		{* close temp slider *}
 
 		

@@ -22,6 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+</div> <!-- end homeslider-->
 {if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
     {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
     	<section>
@@ -47,15 +48,16 @@
 			{$HOOK_HOME_TAB}
 		</section> *}
 	{/if}
-	<div class="tab-content" style="margin-top: 0px;">
+
+	<div class="tab-content" style="border: 4px solid black;overflow: hidden;">
 		<section>
 			
 		</section>
 		<section class="bg-light">
 			{$HOOK_HOME_TAB_CONTENT}
-		</section>
-	</div>
+	{* 	</section>
+	</div> *}
 {/if}
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
-	<div class="clearfix">{$HOOK_HOME}</div>
+	{* <div class="clearfix">{$HOOK_HOME}</div> *}
 {/if}

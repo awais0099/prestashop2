@@ -58,7 +58,7 @@
 
 {* ******************************************************************************************** *}
 
-<div id="newsletter_block_left" style="width: 40%;float: right;">
+<div id="newsletter_block_left" style="width: 40%;text-align: right;">
 	{* <h4>{l s='Newsletter' mod='blocknewsletter'}</h4> *}
 	<div class="block_content">
 		<form action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">

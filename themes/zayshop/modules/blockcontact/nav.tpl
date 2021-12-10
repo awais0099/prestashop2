@@ -28,7 +28,7 @@
 </div> *}
 
 {if $telnumber}
-	<div style="color: white;" class="{if isset($is_logged) && $is_logged} 	is_logged{/if}">
+	<div class="flex-fill" style="color: white;" class="{if isset($is_logged) && $is_logged} 	is_logged{/if}">
 		<i class="fa fa-envelope mx-2"></i>
 		{l s='' mod='blockcontact'} 
 		<a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">{'info@company.com'}</a>
@@ -52,10 +52,10 @@
 </div> *}
 
 <div {if isset($is_logged) && $is_logged} class="is_logged"{/if}>
-	<a class="text-light" href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}">
-		{l s='' mod='blockcontact'}
+	<a class="text-white px-4 text-decoration-none" href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}">
+		{l s='Contact us' mod='blockcontact'}
 	</a>
-	<a class="text-light" href="https://fb.com/templatemo" target="_blank" style="text-decoration: none;">
+	{* <a class="text-light" href="https://fb.com/templatemo" target="_blank" style="text-decoration: none;">
 		<i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
 	</a>
 
@@ -68,6 +68,6 @@
     </a>
     <a class="text-light" href="https://www.linkedin.com/" target="_blank">
     	<i class="fab fa-linkedin fa-sm fa-fw"></i>
-    </a>
+    </a> *}
 </div>
 

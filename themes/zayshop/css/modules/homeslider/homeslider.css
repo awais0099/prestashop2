@@ -16,11 +16,11 @@
   ********************************************************************************/ }
   @media (max-width: 767px) {
     #homepage-slider {
-      width: 100%;
-      max-width: 100%;
+      /*width: 100%;*/
+      /*max-width: 100%;*/
       padding-top: 20px; } }
   #homepage-slider #homeslider {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 0; }
   #homepage-slider .homeslider-container {
     position: relative; }

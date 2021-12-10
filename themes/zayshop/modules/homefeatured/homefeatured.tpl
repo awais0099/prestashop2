@@ -22,6 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+
 {if isset($products) && $products}
 	<div class="container py-5">
 		<div class="row text-center py-3">
@@ -35,6 +36,8 @@
         </div>
         {include file="$tpl_dir./product-list.tpl" class='homefeatured tab-pane' id='homefeatured'}
 	</div>
+</section>
+</div>
 	
 {else}
 <ul id="homefeatured" class="homefeatured tab-pane">

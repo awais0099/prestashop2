@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:51:39
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-10 06:54:05
          compiled from "/var/www/html/prestashop2/themes/zayshop/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:101620105361b209ebd19295-59716944%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:106150805661b33fdda15858-56957454%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '545d845b2d989abbd43e1b1b72101487ce1a5728' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/header.tpl',
-      1 => 1639055979,
+      1 => 1639135770,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '101620105361b209ebd19295-59716944',
+  'nocache_hash' => '106150805661b33fdda15858-56957454',
   'function' => 
   array (
   ),
@@ -47,9 +47,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b209ebe176d7_68127327',
+  'unifunc' => 'content_61b33fdda57cc3_98820857',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b209ebe176d7_68127327')) {function content_61b209ebe176d7_68127327($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_61b33fdda57cc3_98820857')) {function content_61b33fdda57cc3_98820857($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -64,7 +64,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 "<?php }?>>
 	<head>
 		<meta charset="utf-8" />
-		<title><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['meta_title']->value, ENT_QUOTES, 'UTF-8', true);?>
+		<title>title<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['meta_title']->value, ENT_QUOTES, 'UTF-8', true);?>
 </title>
 		<?php if (isset($_smarty_tpl->tpl_vars['meta_description']->value)&&$_smarty_tpl->tpl_vars['meta_description']->value) {?>
 			<meta name="description" content="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['meta_description']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -79,7 +79,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    	<link rel="stylesheet" href="themes/zayshop/css/autoload/fontawesome.min.css">
     
 		<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo $_smarty_tpl->tpl_vars['favicon_url']->value;?>
 ?<?php echo $_smarty_tpl->tpl_vars['img_update_time']->value;?>
@@ -163,7 +164,7 @@ if (!empty($_capture_buffer)) {
 		<?php if (Smarty::$_smarty_vars['capture']['displayNav']) {?>
 			<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
 				<div class="container text-light">
-					<div class="w-100 d-flex justify-content-between">
+					<div class="w-100 d-flex align-items-center">
 						<?php echo Smarty::$_smarty_vars['capture']['displayNav'];?>
 
 					</div>
@@ -178,6 +179,7 @@ if (!empty($_capture_buffer)) {
 		
 
 		
+		
 			<?php $_smarty_tpl->_capture_stack[0][] = array('displayTopColumn', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayTopColumn'),$_smarty_tpl);?>
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
 if (!empty($_capture_buffer)) {
@@ -189,6 +191,7 @@ if (!empty($_capture_buffer)) {
 					<?php echo Smarty::$_smarty_vars['capture']['displayTopColumn'];?>
 
 			<?php }?>
+		
 		
 
 		

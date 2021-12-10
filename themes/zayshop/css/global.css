@@ -5728,8 +5728,9 @@ textarea {
   padding-top: 15px; }
 
 #index .tab-content {
-  margin-top: 35px;
-  margin-bottom: 34px; }
+  /*margin-top: 35px;*/
+  /*margin-bottom: 34px; */
+}
 
 header {
   z-index: 1;
@@ -6262,8 +6263,10 @@ table.table_block td {
   white-space: nowrap; }
 
 .price.product-price {
-  font: 600 21px/26px "Open Sans", sans-serif;
-  color: #333; }
+  /*font: 600 21px/26px "Open Sans", sans-serif;
+  color: #333; */
+  font-size: 21px;
+}
 
 .old-price {
   color: #6f6f6f;

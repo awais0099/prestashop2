@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:51:36
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-10 06:54:05
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/homefeatured/homefeatured.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:81571795061b209e8bc09d5-67567435%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:71770432861b33fdd7fad77-91446280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fa7b97f82ea0b89f43c24a8f2a68bb2ba6919992' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/modules/homefeatured/homefeatured.tpl',
-      1 => 1639051066,
+      1 => 1639132508,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '81571795061b209e8bc09d5-67567435',
+  'nocache_hash' => '71770432861b33fdd7fad77-91446280',
   'function' => 
   array (
   ),
@@ -21,9 +21,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b209e8bc5fb3_15171098',
+  'unifunc' => 'content_61b33fdd7ff1f9_21650510',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b209e8bc5fb3_15171098')) {function content_61b209e8bc5fb3_15171098($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b33fdd7ff1f9_21650510')) {function content_61b33fdd7ff1f9_21650510($_smarty_tpl) {?>
+
 <?php if (isset($_smarty_tpl->tpl_vars['products']->value)&&$_smarty_tpl->tpl_vars['products']->value) {?>
 	<div class="container py-5">
 		<div class="row text-center py-3">
@@ -38,6 +39,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./product-list.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('class'=>'homefeatured tab-pane','id'=>'homefeatured'), 0);?>
 
 	</div>
+</section>
+</div>
 	
 <?php } else { ?>
 <ul id="homefeatured" class="homefeatured tab-pane">

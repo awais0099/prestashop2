@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-09 08:51:39
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-10 06:54:05
          compiled from "/var/www/html/prestashop2/themes/zayshop/modules/blockcontact/nav.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:198825699161b209ebe1bb51-07962130%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:90527327061b33fdda5cd78-02444744%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '684eaa44a55e5cdd3980180ea43fa4c0eb83e11e' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/modules/blockcontact/nav.tpl',
-      1 => 1638947098,
+      1 => 1639121135,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '198825699161b209ebe1bb51-07962130',
+  'nocache_hash' => '90527327061b33fdda5cd78-02444744',
   'function' => 
   array (
   ),
@@ -23,14 +23,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b209ebe302e6_21508228',
+  'unifunc' => 'content_61b33fdda67194_52002035',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b209ebe302e6_21508228')) {function content_61b209ebe302e6_21508228($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_61b33fdda67194_52002035')) {function content_61b33fdda67194_52002035($_smarty_tpl) {?>
 
 
 
 <?php if ($_smarty_tpl->tpl_vars['telnumber']->value) {?>
-	<div style="color: white;" class="<?php if (isset($_smarty_tpl->tpl_vars['is_logged']->value)&&$_smarty_tpl->tpl_vars['is_logged']->value) {?> 	is_logged<?php }?>">
+	<div class="flex-fill" style="color: white;" class="<?php if (isset($_smarty_tpl->tpl_vars['is_logged']->value)&&$_smarty_tpl->tpl_vars['is_logged']->value) {?> 	is_logged<?php }?>">
 		<i class="fa fa-envelope mx-2"></i>
 		<?php echo smartyTranslate(array('s'=>'','mod'=>'blockcontact'),$_smarty_tpl);?>
  
@@ -49,26 +49,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <div <?php if (isset($_smarty_tpl->tpl_vars['is_logged']->value)&&$_smarty_tpl->tpl_vars['is_logged']->value) {?> class="is_logged"<?php }?>>
-	<a class="text-light" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('contact',true), ENT_QUOTES, 'UTF-8', true);?>
+	<a class="text-white px-4 text-decoration-none" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('contact',true), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo smartyTranslate(array('s'=>'Contact us','mod'=>'blockcontact'),$_smarty_tpl);?>
 ">
-		<?php echo smartyTranslate(array('s'=>'','mod'=>'blockcontact'),$_smarty_tpl);?>
+		<?php echo smartyTranslate(array('s'=>'Contact us','mod'=>'blockcontact'),$_smarty_tpl);?>
 
 	</a>
-	<a class="text-light" href="https://fb.com/templatemo" target="_blank" style="text-decoration: none;">
-		<i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
-	</a>
-
-
-    <a class="text-light" href="https://www.instagram.com/" target="_blank" style="text-decoration: none;">
-    	<i class="fab fa-instagram fa-sm fa-fw me-2"></i>
-    </a>
-    <a class="text-light" href="https://twitter.com/" target="_blank" style="text-decoration: none;">
-    	<i class="fab fa-twitter fa-sm fa-fw me-2"></i>
-    </a>
-    <a class="text-light" href="https://www.linkedin.com/" target="_blank">
-    	<i class="fab fa-linkedin fa-sm fa-fw"></i>
-    </a>
+	
 </div>
 
 <?php }} ?>
