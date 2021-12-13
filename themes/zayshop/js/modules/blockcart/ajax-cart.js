@@ -40,8 +40,8 @@ $(document).ready(function(){
 		ajaxCart.refresh();
 
 	/* roll over cart */
-	var cart_block = new HoverWatcher('#header .cart_block');
-	var shopping_cart = new HoverWatcher('#header .shopping_cart');
+	var cart_block = new HoverWatcher('#templatemo_nav_sectop .cart_block');
+	var shopping_cart = new HoverWatcher('#templatemo_nav_sectop .shopping_cart');
 	var is_touch_enabled = false;
 
 	if ('ontouchstart' in document.documentElement)
@@ -55,35 +55,35 @@ $(document).ready(function(){
 		if (is_touch_enabled)
 		{
 			if ($(this).next('.cart_block:visible').length && !cart_block.isHoveringOver())
-				$("#header .cart_block").stop(true, true).slideUp(450);
+				$("#templatemo_nav_sectop .cart_block").stop(true, true).slideUp(450);
 			else if (ajaxCart.nb_total_products > 0 || parseInt($('.ajax_cart_quantity').html()) > 0)
-				$("#header .cart_block").stop(true, true).slideDown(450);
+				$("#templatemo_nav_sectop .cart_block").stop(true, true).slideDown(450);
 			return;
 		}
 		else
 			window.location.href = $(this).attr('href');
 	});
 
-	$("#header .shopping_cart a:first").hover(
+	$("#templatemo_nav_sectop .clearfix .shopping_cart a:first").hover(
 		function(){
 			if (ajaxCart.nb_total_products > 0 || parseInt($('.ajax_cart_quantity').html()) > 0)
-				$("#header .cart_block").stop(true, true).slideDown(450);
+				$("#templatemo_nav_sectop .cart_block").stop(true, true).slideDown(450);
 		},
 		function(){
 			setTimeout(function(){
 				if (!shopping_cart.isHoveringOver() && !cart_block.isHoveringOver())
-					$("#header .cart_block").stop(true, true).slideUp(450);
+					$("#templatemo_nav_sectop .cart_block").stop(true, true).slideUp(450);
 			}, 200);
 		}
 	);
 
-	$("#header .cart_block").hover(
+	$("#templatemo_nav_sectop .cart_block").hover(
 		function(){
 		},
 		function(){
 			setTimeout(function(){
 				if (!shopping_cart.isHoveringOver())
-					$("#header .cart_block").stop(true, true).slideUp(450);
+					$("#templatemo_nav_sectop .cart_block").stop(true, true).slideUp(450);
 			}, 200);
 		}
 	);

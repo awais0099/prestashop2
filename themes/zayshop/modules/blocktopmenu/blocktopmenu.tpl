@@ -38,7 +38,7 @@
 						{$MENU}
 					</ul>
             	</div>
-            	<div class="navbar align-self-center d-flex" style="margin-bottom: 0;">
+            	{* <div class="navbar align-self-center d-flex" style="margin-bottom: 0;">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">
                             <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
@@ -58,8 +58,9 @@
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
-                </div>
-            </div>
-		</div>
-	</nav>
+                </div> *}
+
+     {*        </div> <!--/ #templatemo_main_nav Menue-->
+		</div> <!--/ container Menue-->
+	</nav> <!--/ #templatemo_nav_sectop Menue --> *}
 {/if}

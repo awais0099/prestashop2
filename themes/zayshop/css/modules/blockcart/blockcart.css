@@ -1,6 +1,11 @@
 /*******************************************************************
 					Cart Block Styles
 ********************************************************************/
+.cart_block {
+  display: none;
+  position: absolute;
+}
+
 #header .shopping_cart {
   position: relative;
   float: right;
@@ -18,7 +23,9 @@
     padding: 4px 0px 2px 0px; }
 
 .shopping_cart {
-  width: 270px; }
+  width: 270px; 
+  text-align: right;
+}
   @media (max-width: 480px) {
     .shopping_cart {
       padding-top: 20px; } }
@@ -29,12 +36,12 @@
       width: 100%; } }
   .shopping_cart > a:first-child {
     padding: 7px 10px 14px 16px;
-    background: #333;
     display: block;
     font-weight: bold;
     color: #777777;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden; }
+    overflow: hidden; 
+  }
     @media (min-width: 768px) and (max-width: 991px) {
       .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
         display: none !important; } }
@@ -48,7 +55,7 @@
       display: inline-block;
       font-size: 23px;
       line-height: 23px;
-      color: #fff;
+      color: #777777;
       padding-right: 15px; }
   .shopping_cart .ajax_cart_total {
     display: none !important; }
@@ -267,7 +274,7 @@
   z-index: 99;
   width: 84%;
   margin-right: 8%;
-  margin-left: 8%;
+  /*margin-left: 8%;*/
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }

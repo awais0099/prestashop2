@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2021-12-10 06:54:05
+<?php /* Smarty version Smarty-3.1.19, created on 2021-12-13 08:55:34
          compiled from "/var/www/html/prestashop2/themes/zayshop/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:106150805661b33fdda15858-56957454%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:151727465061b750d6df4173-62871038%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '545d845b2d989abbd43e1b1b72101487ce1a5728' => 
     array (
       0 => '/var/www/html/prestashop2/themes/zayshop/header.tpl',
-      1 => 1639135770,
+      1 => 1639372155,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '106150805661b33fdda15858-56957454',
+  'nocache_hash' => '151727465061b750d6df4173-62871038',
   'function' => 
   array (
   ),
@@ -47,9 +47,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_61b33fdda57cc3_98820857',
+  'unifunc' => 'content_61b750d6e87352_55569064',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_61b33fdda57cc3_98820857')) {function content_61b33fdda57cc3_98820857($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_61b750d6e87352_55569064')) {function content_61b750d6e87352_55569064($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/var/www/html/prestashop2/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -168,8 +168,8 @@ if (!empty($_capture_buffer)) {
 						<?php echo Smarty::$_smarty_vars['capture']['displayNav'];?>
 
 					</div>
-				</div>
-			</nav>
+				</div> <!--container end text-light (top horizontal navbar)-->
+			</nav><!--nav end (top horizontal navbar)-->
 		<?php }?>
 		
 

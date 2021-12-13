@@ -91,8 +91,8 @@
 					<div class="w-100 d-flex align-items-center">
 						{$smarty.capture.displayNav}
 					</div>
-				</div>
-			</nav>
+				</div> <!--container end text-light (top horizontal navbar)-->
+			</nav><!--nav end (top horizontal navbar)-->
 		{/if}
 		{* close Top Nav *}
 
